@@ -32,18 +32,18 @@ namespace pos_equipo
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menúPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cortesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoVendidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoVendidoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedorConVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedorConVentasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasPorDíaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cortesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.corteXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.corteZToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +79,23 @@ namespace pos_equipo
             this.menúPrincipalToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.menúPrincipalToolStripMenuItem.Text = "Menú Principal";
             // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(123, 6);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -91,20 +108,12 @@ namespace pos_equipo
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
-            // cortesToolStripMenuItem
-            // 
-            this.cortesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.corteXToolStripMenuItem,
-            this.corteZToolStripMenuItem});
-            this.cortesToolStripMenuItem.Name = "cortesToolStripMenuItem";
-            this.cortesToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.cortesToolStripMenuItem.Text = "Cortes";
-            // 
             // productoVendidoToolStripMenuItem
             // 
             this.productoVendidoToolStripMenuItem.Name = "productoVendidoToolStripMenuItem";
             this.productoVendidoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.productoVendidoToolStripMenuItem.Text = "Producto + vendido";
+            this.productoVendidoToolStripMenuItem.Click += new System.EventHandler(this.productoVendidoToolStripMenuItem_Click);
             // 
             // productoVendidoToolStripMenuItem1
             // 
@@ -130,34 +139,26 @@ namespace pos_equipo
             this.ventasPorDíaToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.ventasPorDíaToolStripMenuItem.Text = "Ventas por día";
             // 
+            // cortesToolStripMenuItem
+            // 
+            this.cortesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.corteXToolStripMenuItem,
+            this.corteZToolStripMenuItem});
+            this.cortesToolStripMenuItem.Name = "cortesToolStripMenuItem";
+            this.cortesToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.cortesToolStripMenuItem.Text = "Cortes";
+            // 
             // corteXToolStripMenuItem
             // 
             this.corteXToolStripMenuItem.Name = "corteXToolStripMenuItem";
-            this.corteXToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.corteXToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.corteXToolStripMenuItem.Text = "Corte X";
             // 
             // corteZToolStripMenuItem
             // 
             this.corteZToolStripMenuItem.Name = "corteZToolStripMenuItem";
-            this.corteZToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.corteZToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.corteZToolStripMenuItem.Text = "Corte Z";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // Form4
             // 
